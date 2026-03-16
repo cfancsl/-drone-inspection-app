@@ -1,0 +1,31 @@
+{
+  "appId": "com.drone.inspection.app",
+  "appName": "无人机巡检",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "Camera": {
+      "saveToGallery": true,
+      "allowEditing": false,
+      "quality": 80,
+      "resultType": "uri"
+    },
+    "Geolocation": {
+      "enableHighAccuracy": true,
+      "timeout": 10000,
+      "maximumAge": 0
+    }
+  },
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystorePassword": "",
+      "keystoreAlias": "",
+      "keystoreAliasPassword": "",
+      "releaseType": "APK"
+    },
+    "webContentsDebuggingEnabled": true
+  }
+}
