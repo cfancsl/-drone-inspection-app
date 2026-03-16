@@ -26,11 +26,11 @@ jobs:
           cache: 'npm'
           cache-dependency-path: package-lock.json
 
-      # 3. 设置 Java (JDK 17)
+      # 3. 设置 Java (JDK 21)
       - name: Setup Java JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
 
       # 4. 安装依赖
